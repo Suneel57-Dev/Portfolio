@@ -1,0 +1,418 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior : smooth;
+    font-family: 'Times New Roman';
+}
+
+body{
+    background-color: rgb(24,24,24);
+    min-height: 100vh;
+}
+nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 2em 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(15,15,15,0.8);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+}
+ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3em;
+}
+nav ul a{
+    color: white;
+    opacity: 0.7;
+    transition: 0.3s ease-in-out;
+}
+nav ul a:hover{
+    opacity: 1;
+}
+.logo{
+    color: white;
+    font-size: 2em;
+    font-weight: 800;
+    opacity: 0.8;
+    transition: 0.3s ease-in-out;
+}
+.logo:hover{
+    opacity: 1;
+}
+.btn{
+    padding: 0.5em 1em;
+    color: white;
+    font-weight: 500;
+    font-size: 1.1em;
+    border: 2px solid white;
+    border-radius: 0.5em;
+    cursor: pointer;
+    letter-spacing: 1px;
+    transition: 0.3s ease-in-out;
+}
+.btn:hover{
+    background-color: white;
+    color: rgb(24,24,24)
+}
+span{
+    background: linear-gradient(to right, #6cff52, #3ec5ff);
+    background-clip: text;
+    color:transparent;
+}
+#menu{
+    color: white;
+    font-size: 3em;
+    display: none;
+}
+
+
+section{
+    min-height: 100vh;
+    padding: 5% 15%
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    color: white;
+}
+#home img{
+    width: 18vw;
+    border-radius: 50%;
+    margin-top: 3em;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 0.5em;
+    max-width: 600px;
+}
+.info h1{
+    font-size: 2.5em;
+    font-weight: 500;
+}
+.info h3{
+    font-size: 1.5em;
+    font-weight: 300;
+}
+.info p{
+    opacity: 0.7;
+}
+.btn-box{
+    display: flex;
+    gap: 2em;
+}
+.btn-box .btn:nth-of-type(2){
+    background-color: white;
+    color: rgb(24,24,24)
+}
+
+.btn-box .btn:nth-of-type(2):hover{
+    background-color: rgb(24,24,24);
+    color: white;
+}
+
+::-webkit-scrollbar{
+    width: 15px;
+    background-color: rgb(24,24,24);
+}
+
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(to bottom, #6cff52, #3ec5ff);
+}
+
+#about{
+    background-color: rgb(24,24,24);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:5em;
+}
+
+#about img{
+    width: 30vw;
+    border-radius: 1em;
+}
+
+.about-box{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 2em;
+}
+.about-box h1{
+    font-size: 3em;
+}
+.about-box p{
+    color: white;
+    opacity: 0.7;
+}
+.about-box h2{
+    font-size: 2.5em;
+}
+.skills{
+    display: flex;
+    text-align: left;
+    gap: 10em;
+}
+
+.skills ul{
+    font-size: 1.5em;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    opacity: 0.8;
+    align-items: baseline;
+}
+
+.skills ul li span{
+    display: flex;
+    gap: 0.5em;
+    font-size: 1.2em;
+    transition: 0.3s ease-in-out;
+}
+
+.skills ul li span:hover{
+    transform: translateX(10px)
+}
+
+.skills ul li i{
+    font-size: 1em;
+}
+
+
+
+.header{
+    text-align: center;
+    font-size: 5em;
+    margin: 0.5em 0;
+}
+.projects-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2em;
+}
+.projects-card{
+    border: 2px solid rgb(49,49,49);
+    border-radius: 0.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    object-fit: cover;
+    padding: 0 1.5em 1.5em 1.5em;
+    gap: 1em;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.projects-card:hover{
+    transform : translate3d(10px,10px, 10px)
+}
+
+.projects-container p{
+    opacity: 0.7;
+}
+.projects-card h1{
+    font-size: 2em;
+}
+.projects-card a{
+    color: white;
+    padding: 0.2em;
+    border: 1px solid white;
+    width: 3em;
+    text-align: center;
+    border-radius: 0.3em;
+    transition: 0.3s ease-in-out;
+}
+.projects-card a:hover{
+    background: white;
+    color: black;
+}
+
+#contact{
+    background-color: rgb(24,24,24);
+}
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2em;
+}
+form .input-box{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    gap: 1em;
+}
+.input-box span{
+    font-size: 1.5em;
+}
+form input{
+    font-size: 1.3em;
+    padding: 0.5em 2em;
+    border-radius: 0.5em;
+    border: none;
+    outline: none;  
+}
+form input:focus{
+    background: rgb(229,229,229);
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10em;
+    bottom: 0px;
+    background-color: rgba(15,15,15,0.8);
+    width: 100%;
+    padding: 5em 15%;
+}
+.col-left{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.col-box{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+.col-box i{
+    font-size: 1em;
+}
+.col-box span{
+    font-size: 1.5em;
+}
+.col-right span{
+    font-size: 1.3em;
+}
+.col-right .social-icons{
+    display: flex;
+    align-items: baseline;
+    justify-content: baseline;
+    gap: 1em;
+}
+.col-right .social-icons i{
+    font-size: 1.5em;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+.col-right .social-icons i:hover{
+    color: white;
+}
+
+
+@media(max-width:968px){
+    section{
+        padding: 8em 15%;
+    }
+    nav .btn{
+        display: none;
+    }
+    #menu{
+        display: block;
+        font-size: 2em;
+        opacity : 0.7;
+    }
+    .links{
+        position: absolute;
+        top: 100%;
+        right: 0;
+        text-align: center;
+        width: 100%;
+        padding: 1em 3em;
+        color: white;
+        background: rgba(0,0,0,0.9);
+        display: none;
+    }
+    .links a{
+        margin: 0.25em 0;
+        display: block;
+        color: white;
+    }
+    .links.active{
+        display: block;
+    }
+
+    
+    
+}
+
+@media(max-width:750px){
+    nav{
+        padding: 1em 10%;
+    }
+    #menu{
+        font-size: 1.5em;
+    }
+    .info h1{
+        font-size: 2em;
+        font-weight: 400;
+    }
+    .info h3{
+        font-size: 1.25em;
+        font-weight: 200;
+    }
+    .btn{
+        padding: 0.25em 0.5em;
+    }
+    .about-box h1{
+        font-size: 2em;
+    }
+    .about-box h2{
+        font-size: 1.7em;
+    }
+    #about img{
+        display: none;
+    }
+    .skills{
+        gap: 5em;
+    }
+    .skills ul{
+        font-size: 1.2em;
+        font-weight: 300;
+    }
+    .skills ul li i{
+        font-size: 0.7em;
+    }
+    .header{
+        font-size: 3em;
+    }
+    .projects-card h1{
+        font-size: 1.7em;
+    }
+    .input-box span{
+        font-size: 1em;
+    }
+    form input{
+        font-size: 1em;
+        padding: 0.3em 1em;
+    }
+    footer{
+        flex-direction: column;
+        gap: 3em;
+        padding: 2em 10%;
+    }
+    .col-left span{
+        font-size: 0.8em;
+    }
+    .col-right span{
+        font-size: 0.8em;
+    }
+}
